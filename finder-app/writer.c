@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
     return 1;
   }
 
-  syslog (LOG_INFO, "Writing %s to %s", argv[2], argv[1]);
+  syslog (LOG_DEBUG, "Writing %s to %s", argv[2], argv[1]);
   fprintf(file, "%s", argv[2]);
   
   fclose(file);
